@@ -14,8 +14,11 @@ export class AdvicesComponent implements OnInit {
   constructor(public phrase: AdvicesService) { }
 
   ngOnInit(): void {
-    this.phrase.getPhrase().subscribe(res => this.Phrase = res)
 
+  }
+
+  NewMessager() {
+    this.phrase.getPhrase().subscribe(res => this.Phrase = res)
   }
 
 
